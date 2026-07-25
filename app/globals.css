@@ -1,0 +1,185 @@
+@import "tailwindcss";
+
+:root {
+  --ink: #17251f;
+  --green: #173e32;
+  --deep-green: #0f2f27;
+  --cream: #f5f0e5;
+  --paper: #fbf9f3;
+  --orange: #d86836;
+  --gold: #c9a461;
+  --line: #d9d2c3;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", "Noto Serif JP", serif;
+}
+a { color: inherit; text-decoration: none; }
+p { line-height: 1.9; }
+.nav {
+  height: 78px;
+  padding: 0 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(23, 37, 31, .13);
+  background: rgba(251,249,243,.94);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  backdrop-filter: blur(10px);
+}
+.brand { display: inline-flex; align-items: center; gap: 12px; font-weight: 700; letter-spacing: .12em; }
+.brand-mark {
+  display: grid; place-items: center; width: 36px; height: 36px;
+  border: 1px solid var(--green); border-radius: 50%; font-size: 15px;
+}
+.nav-cta, .button {
+  display: inline-flex; align-items: center; justify-content: center; gap: 28px;
+  min-height: 50px; padding: 0 25px; background: var(--green); color: white;
+  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  font-size: 13px; font-weight: 700; letter-spacing: .08em; transition: .2s ease;
+}
+.nav-cta:hover, .button:hover { transform: translateY(-2px); background: var(--deep-green); }
+.hero {
+  min-height: 760px; padding: 86px 7vw 90px; display: grid;
+  grid-template-columns: 1.08fr .92fr; align-items: center; overflow: hidden;
+  background:
+    linear-gradient(90deg, rgba(23,62,50,.04) 1px, transparent 1px) 0 0/80px 80px,
+    var(--cream);
+}
+.eyebrow {
+  margin: 0 0 26px; color: var(--orange); font: 700 12px/1.4 "Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+  letter-spacing: .18em; text-transform: uppercase;
+}
+.hero h1, h2 { margin: 0; font-weight: 500; letter-spacing: .04em; }
+.hero h1 { font-size: clamp(48px, 6vw, 84px); line-height: 1.25; }
+.hero h1 em { color: var(--orange); font-style: normal; position: relative; }
+.hero h1 em::after { content:""; position:absolute; left:0; right:0; bottom:-6px; border-bottom:2px solid var(--orange); }
+.hero-lead { margin: 38px 0 30px; max-width: 650px; font-size: 17px; }
+.hero-lead strong { display: inline-block; margin-top: 7px; }
+.hero-actions { display:flex; align-items:center; gap:28px; margin-top: 34px; }
+.button { min-height: 62px; padding: 0 32px; }
+.text-link { font: 700 13px "Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif; border-bottom:1px solid; padding-bottom:4px; }
+.hero-notes { display:flex; flex-wrap:wrap; gap:9px; padding:0; margin:36px 0 0; list-style:none; }
+.hero-notes li { border:1px solid #b8b1a3; padding:8px 12px; font: 12px "Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif; background:rgba(255,255,255,.38); }
+.hero-visual { min-height: 560px; position:relative; }
+.book { position:absolute; width:250px; height:355px; padding:38px; box-shadow:0 26px 70px rgba(20,40,32,.22); }
+.book-back { background:#d8c5a5; transform:rotate(11deg); right:11%; top:10%; display:flex; align-items:flex-end; justify-content:flex-end; color:#6e5937; letter-spacing:.4em; }
+.book-front { background:var(--green); color:var(--cream); right:26%; top:17%; transform:rotate(-6deg); z-index:3; display:flex; flex-direction:column; }
+.book-kicker { color:var(--gold); font:11px "Arial",sans-serif; letter-spacing:.28em; }
+.book-front strong { margin-top:40px; font-size:34px; line-height:1.42; font-weight:500; }
+.book-line { margin-top:auto; width:44px; border-top:2px solid var(--gold); }
+.plate { position:absolute; width:250px; height:250px; background:#e7e0d1; border-radius:50%; right:-4%; bottom:0; box-shadow:0 22px 60px rgba(50,39,24,.14); }
+.plate-inner { position:absolute; inset:35px; border:1px solid #c8bca7; border-radius:50%; }
+.fork { position:absolute; right:52px; top:107px; transform:rotate(25deg); color:#aa9c87; letter-spacing:-5px; }
+.steam { position:absolute; font-size:78px; color:rgba(216,104,54,.42); transform:rotate(90deg); z-index:4; }
+.steam-one { right:11%; bottom:37%; } .steam-two { right:19%; bottom:30%; font-size:56px; }
+.problem { background:var(--green); color:white; padding:82px 7vw 0; }
+.section-label { margin:0 0 36px; text-align:center; color:#e5d6ba; font-size:14px; letter-spacing:.12em; }
+.problem-grid { display:grid; grid-template-columns:repeat(3,1fr); max-width:1050px; margin:auto; }
+.problem-grid p { text-align:center; padding:18px 32px 40px; border-right:1px solid rgba(255,255,255,.18); font-size:15px; }
+.problem-grid p:last-child { border:0; }
+.problem-grid strong { color:#e4bd79; font-size:21px; font-weight:500; }
+.answer { max-width:760px; margin:36px auto 0; padding:33px 50px; background:var(--paper); color:var(--ink); transform:translateY(35px); box-shadow:0 16px 40px rgba(0,0,0,.13); text-align:center; }
+.answer span { font-size:14px; margin:0 12px; }
+.answer strong { color:var(--orange); font-size:25px; font-weight:500; }
+.section { padding:130px 8vw; }
+.about { display:grid; grid-template-columns:.8fr 1.2fr; gap:9vw; padding-top:165px; }
+.section-heading h2 { font-size:clamp(35px,4vw,58px); line-height:1.5; }
+.section-heading > p:last-child { margin-top:28px; }
+.about-body { max-width:660px; }
+.big-copy { font-size:23px; line-height:1.8; margin-top:0; }
+blockquote { margin:46px 0 0; padding:27px 35px; border-left:3px solid var(--orange); background:#f0eadd; color:var(--green); font-size:20px; line-height:1.8; }
+.benefits { background:#ede6d8; }
+.centered { text-align:center; }
+.benefit-grid { max-width:1120px; margin:70px auto 0; display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+.benefit-card { min-height:320px; background:var(--paper); padding:38px 34px; border-top:4px solid var(--orange); }
+.card-number { color:#b8a98f; font:13px Arial,sans-serif; letter-spacing:.15em; }
+.benefit-card h3 { margin:55px 0 20px; font-size:22px; font-weight:500; }
+.benefit-card p { margin:0; font-size:14px; }
+.note { max-width:1120px; margin:22px auto 0; color:#6c6b65; font:11px/1.7 "Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif; }
+.scene { background:var(--deep-green); color:white; display:grid; grid-template-columns:1fr 1fr; gap:8vw; align-items:center; overflow:hidden; position:relative; }
+.scene::before { content:""; width:460px; height:460px; border:1px solid rgba(201,164,97,.28); border-radius:50%; position:absolute; right:-80px; top:-180px; }
+.light { color:#e0b96f; }
+.scene h2 { font-size:clamp(42px,5vw,70px); line-height:1.45; }
+.scene-copy > p:last-child { max-width:570px; color:#dce3dd; }
+.scene-quote { padding:70px 30px; text-align:center; border:1px solid rgba(255,255,255,.2); position:relative; }
+.scene-quote span { color:var(--gold); font-size:70px; line-height:.7; }
+.scene-quote p { margin:10px 0; font-size:30px; line-height:1.7; }
+.flow { display:grid; grid-template-columns:.8fr 1.2fr; gap:9vw; }
+.flow-list { list-style:none; padding:0; margin:0; }
+.flow-list li { display:grid; grid-template-columns:60px 1fr; gap:26px; padding:0 0 33px; margin-bottom:33px; border-bottom:1px solid var(--line); }
+.flow-list li > span { color:var(--orange); font:14px Arial,sans-serif; padding-top:7px; }
+.flow-list h3 { margin:0 0 8px; font-size:22px; font-weight:500; }
+.flow-list p { margin:0; font-size:14px; }
+.plan { background:var(--cream); display:grid; grid-template-columns:1fr 1fr; gap:8vw; align-items:center; }
+.plan h2 { font-size:clamp(40px,5vw,66px); line-height:1.45; }
+.plan-card { background:white; padding:44px; border:1px solid #d5ccbb; box-shadow:14px 14px 0 #d8c9ad; }
+.plan-tag { margin:0 0 24px; font-size:14px; color:var(--orange); }
+.plan-card ul { padding:0; list-style:none; }
+.plan-card li { padding:13px 0; border-bottom:1px solid #eee9df; }
+.plan-card li span { color:var(--orange); margin-right:12px; }
+.price { margin-top:30px; padding:25px; background:var(--green); color:white; text-align:center; }
+.price span, .price small { display:block; font:12px/1.6 "Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif; }
+.price strong { display:block; margin:7px; color:#efd49e; font-size:28px; font-weight:500; }
+.faq-list { max-width:900px; margin:60px auto 0; }
+details { border-top:1px solid var(--line); }
+details:last-child { border-bottom:1px solid var(--line); }
+summary { display:flex; justify-content:space-between; align-items:center; padding:25px 10px; cursor:pointer; font-size:17px; list-style:none; }
+summary::-webkit-details-marker { display:none; }
+summary span { color:var(--orange); font-size:24px; }
+details p { padding:0 45px 25px 10px; margin:0; color:#535c57; font-size:14px; }
+.apply { padding:120px 7vw; background:var(--orange); color:white; text-align:center; }
+.apply-inner { max-width:850px; margin:auto; }
+.apply h2 { font-size:clamp(38px,5vw,62px); line-height:1.5; }
+.apply-inner > p:not(.eyebrow) { max-width:650px; margin:30px auto; }
+.apply-box { margin:42px auto 28px; padding:34px; max-width:650px; background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.5); }
+.apply-box span { display:block; margin-bottom:12px; font:12px "Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif; letter-spacing:.13em; }
+.apply-box strong { display:block; font-size:22px; line-height:1.7; font-weight:500; }
+.apply-box p { margin:10px 0 0; font-size:12px; }
+.cream { background:var(--cream); color:var(--green); }
+.cream:hover { background:white; }
+footer { padding:70px 7vw 35px; background:#0b241e; color:#f2eee3; text-align:center; }
+.footer-brand { margin-bottom:18px; }
+footer p { color:#aebbb6; font-size:13px; }
+footer small { display:block; margin-top:35px; color:#71857d; font-family:Arial,sans-serif; }
+
+@media (max-width: 850px) {
+  .nav { height:66px; padding:0 20px; }
+  .brand { font-size:13px; }.brand-mark{width:32px;height:32px}
+  .nav-cta { min-height:40px; padding:0 14px; font-size:11px; }
+  .hero { padding:60px 24px 70px; grid-template-columns:1fr; }
+  .hero h1 { font-size:48px; }
+  .hero-lead br { display:none; }
+  .hero-actions { align-items:flex-start; flex-direction:column; }
+  .hero-visual { min-height:440px; margin-top:35px; }
+  .book { width:200px; height:286px; padding:28px; }
+  .book-front { right:25%; }.book-back { right:4%; }
+  .book-front strong { font-size:27px; margin-top:28px; }
+  .plate { width:190px; height:190px; }
+  .problem { padding:62px 24px 0; }
+  .problem-grid { grid-template-columns:1fr; }
+  .problem-grid p { border-right:0; border-bottom:1px solid rgba(255,255,255,.18); }
+  .answer { padding:28px 20px; }
+  .answer span { display:block; margin:6px; }.answer strong{font-size:21px}
+  .section { padding:100px 24px; }
+  .about,.flow,.plan,.scene { grid-template-columns:1fr; gap:60px; }
+  .about { padding-top:140px; }
+  .benefit-grid { grid-template-columns:1fr; margin-top:45px; }
+  .benefit-card { min-height:auto; }.benefit-card h3{margin-top:30px}
+  .scene::before { width:300px; height:300px; }
+  .plan-card { padding:28px 22px; box-shadow:8px 8px 0 #d8c9ad; }
+  .apply { padding:95px 24px; }
+  .apply-box { padding:27px 18px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior:auto; }
+  * { transition:none !important; }
+}
