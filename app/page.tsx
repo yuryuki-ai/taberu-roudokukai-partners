@@ -169,15 +169,18 @@ export default function Home() {
           <h2>まずは一度、<br />企画とお店との相性を<br />確かめてください。</h2>
         </div>
         <div className="plan-card">
-          <p className="plan-tag">協力店としてご相談いただけること</p>
+          <p className="plan-tag">TABERU朗読会 企画協力店</p>
           <ul>
             <li><span>✓</span> 初回イベントの開催相談</li>
             <li><span>✓</span> 店舗に合う作品・料理テーマの企画</li>
           </ul>
           <div className="partner-free">
-            <span>協力店になっていただくのは</span>
-            <strong>無料です。</strong>
-            <p>当会がお店の利用料、食事代をお支払いいたします。</p>
+            <strong>店舗の負担金は0円。</strong>
+            <p>当会が店舗利用料・食事代をお支払いします。</p>
+          </div>
+          <div className="partner-paid">
+            <strong>TABERU朗読会<br />定期開催パートナー店も募集中です。</strong>
+            <p>継続的な集客・ファンづくりに取り組む有償プランです。</p>
           </div>
         </div>
       </section>

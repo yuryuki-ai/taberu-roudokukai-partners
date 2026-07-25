@@ -130,9 +130,11 @@ blockquote { margin:46px 0 0; padding:27px 35px; border-left:3px solid var(--ora
 .plan-card li { padding:13px 0; border-bottom:1px solid #eee9df; }
 .plan-card li span { color:var(--orange); margin-right:12px; }
 .partner-free { margin-top:30px; padding:28px; background:var(--green); color:white; text-align:center; }
-.partner-free span { display:block; font:13px/1.6 "Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif; }
 .partner-free strong { display:block; margin:7px; color:#efd49e; font-size:32px; font-weight:500; }
 .partner-free p { margin:14px 0 0; padding-top:14px; border-top:1px solid rgba(255,255,255,.2); font-size:15px; line-height:1.7; }
+.partner-paid { margin-top:18px; padding:25px 28px; border:1px solid #cdbf9f; background:#faf6ed; text-align:center; }
+.partner-paid strong { color:var(--green); font-size:19px; line-height:1.65; font-weight:500; }
+.partner-paid p { margin:13px 0 0; padding-top:13px; border-top:1px solid #ded5c3; color:#625f57; font-size:13px; line-height:1.7; }
 .faq-list { max-width:900px; margin:60px auto 0; }
 details { border-top:1px solid var(--line); }
 details:last-child { border-bottom:1px solid var(--line); }
