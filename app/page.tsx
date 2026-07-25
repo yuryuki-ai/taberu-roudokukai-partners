@@ -47,7 +47,7 @@ export default function Home() {
           <p className="eyebrow">レストラン・カフェ・居酒屋のオーナーさまへ</p>
           <h1>
             その一皿を、<br />
-            <em>また来たい理由</em>に。
+            <em>また来たい理由</em><span className="hero-ending">に。</span>
           </h1>
           <p className="hero-lead">
             物語の朗読を聴き、物語に登場する料理を味わう。
