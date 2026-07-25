@@ -34,9 +34,9 @@ export default function Home() {
   return (
     <main>
       <header className="nav">
-        <a className="brand" href="#top" aria-label="タベル朗読会 トップ">
-          <span className="brand-mark">タ</span>
-          <span>タベル朗読会</span>
+        <a className="brand" href="#top" aria-label="TABERU朗読会 トップ">
+          <span className="brand-mark">T</span>
+          <span>TABERU朗読会</span>
         </a>
         <a className="nav-cta" href="#apply">協力店に応募する</a>
       </header>
@@ -52,11 +52,11 @@ export default function Home() {
             物語を聴き、物語に登場する料理を味わう。
             <br />
             「文学 × 食」の体験で、新しいお客様と店のファンを育てる
-            <strong>「タベル朗読会協力店」</strong>を募集しています。
+            <strong>「TABERU朗読会協力店」</strong>を募集しています。
           </p>
           <div className="hero-actions">
             <a className="button primary" href="#apply">まずは話を聞いてみる <span>→</span></a>
-            <a className="text-link" href="#about">タベル朗読会とは</a>
+            <a className="text-link" href="#about">TABERU朗読会とは</a>
           </div>
           <ul className="hero-notes" aria-label="対象店舗">
             <li>貸切・時間貸しができる</li>
@@ -67,7 +67,7 @@ export default function Home() {
         <div className="hero-visual" aria-hidden="true">
           <div className="book book-back"><span>物 語</span></div>
           <div className="book book-front">
-            <span className="book-kicker">TABELU</span>
+            <span className="book-kicker">TABERU</span>
             <strong>朗読と<br />一皿の<br />ものがたり</strong>
             <span className="book-line" />
           </div>
@@ -104,7 +104,7 @@ export default function Home() {
             小説や物語に登場する食べ物を朗読し、その一皿を実際に味わう——。
           </p>
           <p>
-            タベル朗読会は、耳で味わう物語と、舌で味わう料理をひとつにした参加型イベントです。
+            TABERU朗読会は、耳で味わう物語と、舌で味わう料理をひとつにした参加型イベントです。
             お客様は「食事をする場所」としてだけでなく、「心に残る時間を過ごした場所」としてお店を知ります。
           </p>
           <blockquote>
@@ -217,11 +217,11 @@ export default function Home() {
 
       <footer>
         <a className="brand footer-brand" href="#top">
-          <span className="brand-mark">タ</span>
-          <span>タベル朗読会</span>
+          <span className="brand-mark">T</span>
+          <span>TABERU朗読会</span>
         </a>
         <p>物語を聴く。料理を味わう。店を好きになる。</p>
-        <small>© タベル朗読会</small>
+        <small>© TABERU朗読会</small>
       </footer>
     </main>
   );
