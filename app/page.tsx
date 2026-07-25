@@ -53,7 +53,7 @@ export default function Home() {
             物語の朗読を聴き、物語に登場する料理を味わう。
             <br />
             「朗読 × 食」の体験で、新しいお客様とお店のファンを育てる
-            <strong>「タベル朗読会協力店」</strong>を募集しています。
+            <strong>「TABERU朗読会協力店」</strong>を募集しています。
           </p>
           <div className="hero-actions">
             <a className="button primary" href="#apply">まずは話を聞いてみる <span>→</span></a>
