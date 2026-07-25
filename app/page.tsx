@@ -166,21 +166,19 @@ export default function Home() {
       <section className="plan section">
         <div>
           <p className="eyebrow">PARTNER SHOP</p>
-          <h2>まずは一回、<br />お店との相性を<br />確かめてください。</h2>
+          <h2>まずは一度、<br />企画とお店との相性を<br />確かめてください。</h2>
         </div>
         <div className="plan-card">
           <p className="plan-tag">協力店としてご相談いただけること</p>
           <ul>
             <li><span>✓</span> 初回イベントの開催相談</li>
             <li><span>✓</span> 店舗に合う作品・料理テーマの企画</li>
-            <li><span>✓</span> 継続開催プランのご提案</li>
           </ul>
-          <div className="price">
-            <span>継続プラン例</span>
-            <strong>月額 30,000円</strong>
-            <small>月2回開催を想定／内容は事前相談</small>
+          <div className="partner-free">
+            <span>協力店になっていただくのは</span>
+            <strong>無料です。</strong>
+            <p>当会がお店の利用料、食事代をお支払いいたします。</p>
           </div>
-          <p className="note">※初回開催の条件・費用は店舗ごとにご相談のうえ決定します。</p>
         </div>
       </section>
 
