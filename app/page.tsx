@@ -50,10 +50,10 @@ export default function Home() {
             <em>また来たい理由</em>に。
           </h1>
           <p className="hero-lead">
-            物語を聴き、物語に登場する料理を味わう。
+            物語の朗読を聴き、物語に登場する料理を味わう。
             <br />
-            「文学 × 食」の体験で、新しいお客様と店のファンを育てる
-            <strong>「TABERU朗読会協力店」</strong>を募集しています。
+            「朗読 × 食」の体験で、新しいお客様とお店のファンを育てる
+            <strong>「タベル朗読会協力店」</strong>を募集しています。
           </p>
           <div className="hero-actions">
             <a className="button primary" href="#apply">まずは話を聞いてみる <span>→</span></a>
