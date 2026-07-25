@@ -34,9 +34,9 @@ export default function Home() {
   return (
     <main>
       <header className="nav">
-        <a className="brand" href="#top" aria-label="TABERU朗読会 トップ">
+        <a className="brand" href="#top" aria-label="食べる朗読会 トップ">
           <span className="brand-logo-frame">
-            <img className="brand-logo" src="./taberu-logo.png" alt="TABERU朗読会" />
+            <img className="brand-logo" src="./taberu-logo.png" alt="食べる朗読会" />
           </span>
         </a>
         <a className="nav-cta" href="#apply">協力店に応募する</a>
@@ -46,19 +46,19 @@ export default function Home() {
         <div className="hero-copy">
           <p className="eyebrow">レストラン・カフェ・居酒屋のオーナーさまへ</p>
           <h1>
-            その一皿を、<br />
+            新しい食体験を、<br />
             <em>また来たい理由</em><span className="hero-ending">に。</span>
           </h1>
           <p className="hero-lead">
             物語の朗読を聴き、物語に登場する料理を味わう。
             <br />
             「朗読 × 食」の体験で、新しいお客様とお店のファンを育てる
-            <strong>「TABERU朗読会協力店」</strong>を募集しています。
+            <strong>「食べる朗読会協力店」</strong>を募集しています。
             <span className="hero-capacity">ワンフロアで20席あるお店であれば開催できます。</span>
           </p>
           <div className="hero-actions">
             <a className="button primary" href="#apply">まずは話を聞いてみる <span>→</span></a>
-            <a className="text-link" href="#about">TABERU朗読会とは</a>
+            <a className="text-link" href="#about">食べる朗読会とは</a>
           </div>
           <ul className="hero-notes" aria-label="対象店舗">
             <li>貸切・時間貸しができる</li>
@@ -69,7 +69,7 @@ export default function Home() {
         <div className="hero-visual" aria-hidden="true">
           <div className="book book-back"><span>物 語</span></div>
           <div className="book book-front">
-            <span className="book-kicker">TABERU</span>
+            <span className="book-kicker">食べる</span>
             <strong>朗読と<br />一皿の<br />ものがたり</strong>
             <span className="book-line" />
           </div>
@@ -106,7 +106,7 @@ export default function Home() {
             小説や物語に登場する食べ物を朗読し、その一皿を実際に味わう——。
           </p>
           <p>
-            TABERU朗読会は、耳で味わう物語と、舌で味わう料理をひとつにした参加型イベントです。
+            食べる朗読会は、耳で味わう物語と、舌で味わう料理をひとつにした参加型イベントです。
             お客様は「食事をする場所」としてだけでなく、「心に残る時間を過ごした場所」としてお店を知ります。
           </p>
           <blockquote>
@@ -170,7 +170,7 @@ export default function Home() {
           <h2>まずは一度、<br />企画とお店との相性を<br />確かめてください。</h2>
         </div>
         <div className="plan-card">
-          <p className="plan-tag">TABERU朗読会 企画協力店</p>
+          <p className="plan-tag">食べる朗読会 企画協力店</p>
           <ul>
             <li><span>✓</span> 初回イベントの開催相談</li>
             <li><span>✓</span> 店舗に合う作品・料理テーマの企画</li>
@@ -180,7 +180,7 @@ export default function Home() {
             <p>当会が店舗利用料・食事代をお支払いします。</p>
           </div>
           <div className="partner-paid">
-            <strong>TABERU朗読会<br />定期開催パートナー店も募集中です。</strong>
+            <strong>食べる朗読会<br />定期開催パートナー店も募集中です。</strong>
             <p>継続的な集客・ファンづくりに取り組む有償プランです。</p>
           </div>
         </div>
@@ -221,11 +221,11 @@ export default function Home() {
       <footer>
         <a className="brand footer-brand" href="#top">
           <span className="brand-logo-frame footer-logo-frame">
-            <img className="brand-logo" src="./taberu-logo.png" alt="TABERU朗読会" />
+            <img className="brand-logo" src="./taberu-logo.png" alt="食べる朗読会" />
           </span>
         </a>
         <p>物語を聴く。料理を味わう。店を好きになる。</p>
-        <small>© TABERU朗読会</small>
+        <small>© 食べる朗読会</small>
       </footer>
     </main>
   );
