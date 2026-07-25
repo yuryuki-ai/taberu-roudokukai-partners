@@ -36,7 +36,7 @@ export default function Home() {
       <header className="nav">
         <a className="brand" href="#top" aria-label="TABERU朗読会 トップ">
           <span className="brand-logo-frame">
-            <img className="brand-logo" src="/taberu-logo.png" alt="TABERU朗読会" />
+            <img className="brand-logo" src="./taberu-logo.png" alt="TABERU朗読会" />
           </span>
         </a>
         <a className="nav-cta" href="#apply">協力店に応募する</a>
@@ -220,7 +220,7 @@ export default function Home() {
       <footer>
         <a className="brand footer-brand" href="#top">
           <span className="brand-logo-frame footer-logo-frame">
-            <img className="brand-logo" src="/taberu-logo.png" alt="TABERU朗読会" />
+            <img className="brand-logo" src="./taberu-logo.png" alt="TABERU朗読会" />
           </span>
         </a>
         <p>物語を聴く。料理を味わう。店を好きになる。</p>
