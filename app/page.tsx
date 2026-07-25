@@ -54,6 +54,7 @@ export default function Home() {
             <br />
             「朗読 × 食」の体験で、新しいお客様とお店のファンを育てる
             <strong>「TABERU朗読会協力店」</strong>を募集しています。
+            <span className="hero-capacity">ワンフロアで20席あるお店であれば開催できます。</span>
           </p>
           <div className="hero-actions">
             <a className="button primary" href="#apply">まずは話を聞いてみる <span>→</span></a>

@@ -68,6 +68,7 @@ p { line-height: 1.9; }
 .hero-ending { display: inline; }
 .hero-lead { margin: 38px 0 30px; max-width: 650px; font-size: 17px; }
 .hero-lead strong { display: inline-block; margin-top: 7px; }
+.hero-capacity { display:block; margin-top:12px; color:var(--green); font-weight:700; }
 .hero-actions { display:flex; align-items:center; gap:28px; margin-top: 34px; }
 .button { min-height: 62px; padding: 0 32px; }
 .text-link { font: 700 13px "Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif; border-bottom:1px solid; padding-bottom:4px; }
