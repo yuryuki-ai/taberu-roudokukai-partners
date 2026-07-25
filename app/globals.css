@@ -34,10 +34,14 @@ p { line-height: 1.9; }
   z-index: 20;
   backdrop-filter: blur(10px);
 }
-.brand { display: inline-flex; align-items: center; gap: 12px; font-weight: 700; letter-spacing: .12em; }
-.brand-mark {
-  display: grid; place-items: center; width: 36px; height: 36px;
-  border: 1px solid var(--green); border-radius: 50%; font-size: 15px;
+.brand { display: inline-flex; align-items: center; }
+.brand-logo-frame {
+  position: relative; display: block; width: 250px; height: 60px;
+  overflow: hidden; background: var(--cream);
+}
+.brand-logo {
+  position: absolute; width: 250px; height: auto; left: 0; top: 50%;
+  transform: translateY(-50%);
 }
 .nav-cta, .button {
   display: inline-flex; align-items: center; justify-content: center; gap: 28px;
@@ -147,12 +151,17 @@ details p { padding:0 45px 25px 10px; margin:0; color:#535c57; font-size:14px; }
 .cream:hover { background:white; }
 footer { padding:70px 7vw 35px; background:#0b241e; color:#f2eee3; text-align:center; }
 .footer-brand { margin-bottom:18px; }
+.footer-logo-frame { width: 280px; height: 80px; border: 1px solid rgba(255,255,255,.12); }
+.footer-logo-frame .brand-logo { width: 280px; }
 footer p { color:#aebbb6; font-size:13px; }
 footer small { display:block; margin-top:35px; color:#71857d; font-family:Arial,sans-serif; }
 
 @media (max-width: 850px) {
   .nav { height:66px; padding:0 20px; }
-  .brand { font-size:13px; }.brand-mark{width:32px;height:32px}
+  .brand-logo-frame { width: 178px; height: 48px; }
+  .brand-logo { width: 178px; }
+  .footer-logo-frame { width: 230px; height: 68px; }
+  .footer-logo-frame .brand-logo { width: 230px; }
   .nav-cta { min-height:40px; padding:0 14px; font-size:11px; }
   .hero { padding:60px 24px 70px; grid-template-columns:1fr; }
   .hero h1 { font-size:48px; }
