@@ -148,7 +148,8 @@ details p { padding:0 45px 25px 10px; margin:0; color:#535c57; font-size:14px; }
 .apply-inner { max-width:850px; margin:auto; }
 .apply h2 { font-size:clamp(38px,5vw,62px); line-height:1.5; }
 .apply-inner > p:not(.eyebrow) { max-width:650px; margin:30px auto; }
-.apply-box { margin:42px auto 28px; padding:34px; max-width:650px; background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.5); }
+.apply-box { display:block; margin:42px auto 28px; padding:34px; max-width:650px; background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.5); color:inherit; text-decoration:none; transition:.2s ease; }
+.apply-box:hover { transform:translateY(-2px); background:rgba(255,255,255,.18); }
 .apply-box span { display:block; margin-bottom:12px; font:12px "Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif; letter-spacing:.13em; }
 .apply-box strong { display:block; font-size:22px; line-height:1.7; font-weight:500; }
 .apply-box p { margin:10px 0 0; font-size:12px; }

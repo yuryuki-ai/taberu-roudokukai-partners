@@ -39,7 +39,7 @@ export default function Home() {
             <img className="brand-logo" src="./taberu-logo.png" alt="食べる朗読会" />
           </span>
         </a>
-        <a className="nav-cta" href="#apply">協力店に応募する</a>
+        <a className="nav-cta" href="https://www.roudokukentei.jp/contact/">協力店に応募する</a>
       </header>
 
       <section className="hero" id="top">
@@ -209,11 +209,11 @@ export default function Home() {
             まだ具体的な開催日や作品が決まっていなくても大丈夫です。
             まずは店舗の状況と、やってみたいことをお聞かせください。
           </p>
-          <div className="apply-box">
+          <a className="apply-box" href="https://www.roudokukentei.jp/contact/">
             <span>協力店相談のご連絡方法</span>
             <strong>このページをお送りした担当者へ<br />「協力店相談」とご返信ください。</strong>
             <p>確認後、日程調整のご連絡を差し上げます。</p>
-          </div>
+          </a>
           <a className="button cream" href="#top">ページ上部へ戻る <span>↑</span></a>
         </div>
       </section>
