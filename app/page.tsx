@@ -211,8 +211,12 @@ export default function Home() {
           </p>
           <a className="apply-box" href="https://www.roudokukentei.jp/contact/">
             <span>協力店相談のご連絡方法</span>
-            <strong>このページをお送りした担当者へ<br />「協力店相談」とご返信ください。</strong>
-            <p>確認後、日程調整のご連絡を差し上げます。</p>
+            <strong>
+              こちらのお問い合せフォームの<br />
+              「お問い合わせ内容」に、<br />
+              協力店相談 とご記入の上、お問い合せください
+            </strong>
+            <p>確認後、返信させていただきます。</p>
           </a>
           <a className="button cream" href="#top">ページ上部へ戻る <span>↑</span></a>
         </div>
